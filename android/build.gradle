@@ -6,7 +6,7 @@ buildscript {
     repositories {
         google()
         jcenter()
-        maven { url 'https://developer.huawei.com/repo/' }
+//        maven { url 'https://developer.huawei.com/repo/' }
     }
 
     dependencies {
@@ -19,7 +19,7 @@ rootProject.allprojects {
     repositories {
         google()
         jcenter()
-        maven { url 'https://developer.huawei.com/repo/' }
+//        maven { url 'https://developer.huawei.com/repo/' }
     }
 }
 
@@ -43,6 +43,6 @@ android {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation "com.huawei.hms:hwid:4.0.0.300"
+//    implementation "com.huawei.hms:hwid:4.0.0.300"
     implementation "com.google.android.gms:play-services-base:17.3.0"
 }

@@ -8,8 +8,8 @@ import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
 import io.flutter.plugin.common.PluginRegistry.Registrar
 import android.content.Context
-import com.huawei.hms.api.ConnectionResult
-import com.huawei.hms.api.HuaweiApiAvailability
+//import com.huawei.hms.api.ConnectionResult
+//import com.huawei.hms.api.HuaweiApiAvailability
 import com.google.android.gms.common.GoogleApiAvailability
 
 /** FlutterHmsGmsAvailabilityPlugin */
@@ -39,10 +39,10 @@ public class FlutterHmsGmsAvailabilityPlugin : FlutterPlugin, MethodCallHandler 
 
   private fun isHmsAvailable(): Boolean {
     var isAvailable = false
-    if (null != context) {
-        val result = HuaweiApiAvailability.getInstance().isHuaweiMobileServicesAvailable(context)
-        isAvailable = ConnectionResult.SUCCESS == result
-    }
+//    if (null != context) {
+//        val result = HuaweiApiAvailability.getInstance().isHuaweiMobileServicesAvailable(context)
+//        isAvailable = ConnectionResult.SUCCESS == result
+//    }
     return isAvailable
   }
 
